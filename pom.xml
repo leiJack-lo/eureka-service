@@ -19,7 +19,7 @@
   <parent>
   	<groupId>org.springframework.boot</groupId>
   	<artifactId>spring-boot-starter-parent</artifactId>
-  	<version>2.0.6.RELEASE</version>
+  	<version>2.0.7.RELEASE</version>
   	<relativePath />
   </parent>
   
@@ -64,6 +64,7 @@
   </dependencies>
   
   <build>
+  <finalName>${name}</finalName>
   	<plugins>
   		<!-- 打包插件 -->
   		<plugin>
@@ -71,7 +72,7 @@
   			<artifactId>spring-boot-maven-plugin</artifactId>
   			<configuration>
   				<executable>true</executable>
-  				<mainClass>com.leiJack.Application</mainClass>
+  				<mainClass>com.leiJack.App</mainClass>
   			</configuration>
   		</plugin>
   		
